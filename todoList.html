@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List Design</title>
+  <link rel="stylesheet" href="todoList.css">
+</head>
+
+<body>
+
+  <h2 class="title">Todo List Design</h2>
+
+  <div class="todo-input-grid">
+    <div class="contain">
+      <input class="todoInput" placeholder="Todo Title" type="text">
+      <input class="todoDate" type="date">
+      <input class="todoTime" type="time">
+      <button class="add-todo" onclick="displayData();">Add Todo</button>
+      <button class="clear" onclick="
+        localStorage.removeItem('todoList');
+        todoList = [];
+        generateHtml();">
+        Clear List
+      </button>
+    </div>
+
+    <div class="display"></div>
+  </div>
+  
+  <script src="todoList.js"></script>
+</body>
+</html>

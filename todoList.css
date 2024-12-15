@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h2.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.todo-input-grid {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todoInput,
+.todoDate,
+.todoTime {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.todoInput:focus,
+.todoDate:focus,
+.todoTime:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.add-todo {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.add-todo:hover {
+  background-color: #2980b9;
+}
+
+.clear {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.clear:hover {
+  background-color: #c0392b;
+}
+
+.display {
+  margin-top: 20px;
+}
+
+.todo-item {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.todo-item .deleteTodoBtn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.3s;
+}
+
+.todo-item .deleteTodoBtn:hover {
+  background-color: #c0392b;
+}
+
+.number {
+  font-size: 16px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+@media (max-width: 480px) {
+  .todo-input-grid {
+    padding: 20px;
+  }
+}
